@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#player-name {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button[type="submit"],
+#scoreboard-button {
+    padding: 10px 20px;
+    background-color: #164863;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px; 
+}
+
+button[type="submit"]:hover,
+#scoreboard-button:hover {
+    background-color: #062d3d;
+}
+
+button[type="submit"]:focus,
+#scoreboard-button:focus {
+    outline: none;
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    #player-name {
+        padding: 8px;
+    }
+
+    button[type="submit"],
+    #scoreboard-button {
+        font-size: 14px; /* Decrease font size for buttons on smaller screens */
+        margin: 3px; /* Adjust button margin for smaller screens */
+    }
+}
